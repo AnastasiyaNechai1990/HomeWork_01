@@ -3,13 +3,16 @@
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3*/
 
-        Console.WriteLine("Введите числа: ");
-        int number1 = int.Parse(Console.ReadLine()!);
-        int number2 = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите первое чило: ");
+int number1 = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите второе чило: ");
+int number2 = int.Parse(Console.ReadLine()!);
 
-if (number1 > number2!);
-        Console.WriteLine(number1);
+if (number1 > number2)
+{ 
+    Console.WriteLine($"max={number1},min={number2}");
+}
 else
-        {
-            Console.WriteLine(number2);
+{
+    Console.WriteLine($"max={number2},min={number1}");
 }
